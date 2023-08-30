@@ -656,7 +656,7 @@
   }
 
   .leftSection > h2{
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .leftSection > span{
@@ -667,8 +667,8 @@
   }
 
   .section1 > img {
-    width: 750px;
-    left: -200px;
+    width: 980px;
+    left: -400px;
   }
 
   .section2, .section3Products, .section4InfoContainer,  .section3, .section4Texts  {
