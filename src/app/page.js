@@ -61,13 +61,14 @@ export default function Page() {
         <div className={styles.leftSection}>
             <h2>Invest in modern equipment to improve your results and speed up operation</h2>
             <span>We offer wide range of laboratory equipment, customized lab coats, chemicals and reagents for medical and science laboratories. We also deal on Industrial chemicals.</span>
-            <Link href={'./about'}>
-               <button>
-                <span>Learn More</span>
-                <Image src={arrowRight} width={20} height={20} alt="arrowRight"/>
-              </button>
-            </Link>
-           
+            <div className ='button'>
+              <Link href={'./about'}>
+                <button>
+                  <span>Learn More</span>
+                  <Image src={arrowRight} width={20} height={20} alt="arrowRight"/>
+                </button>
+              </Link>
+           </div>
         </div>
         <div className={styles.rightSection}>
           <Image src={bannerImage} alt="bannerImage" width={300} height={300} />

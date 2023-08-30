@@ -52,12 +52,14 @@ export default function page() {
                     To be the leading laboratory supply service provider recognized for our unmatched product quality, exceptional customer service, and commitment to scientific progress. We aspire to be the preferred partner for researchers, laboratories, and scientific institutions worldwide, offering comprehensive solutions that enable breakthrough discoveries and improve the quality of life.
                     </p>
                 </div>
-                <Link href='./contact'>
-                    <button>
-                        <span>Contact Us</span>
-                        <Image src={arrowRight} width={20} height={20} alt="arrowRight"/>
-                    </button>
-                </Link>      
+                <div className = 'button'>
+                    <Link href='./contact'>
+                        <button>
+                            <span>Contact Us</span>
+                            <Image src={arrowRight} width={20} height={20} alt="arrowRight"/>
+                        </button>
+                    </Link> 
+                </div>     
             </div>
             <Image src={bgSvg2} alt="bgSvg2"/>
         </div>

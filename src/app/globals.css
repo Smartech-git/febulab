@@ -229,19 +229,21 @@ header {
 .mobileNav {
   display: none;
 }
-
+.button {
+  margin-top: 60px;
+}
 button {
   width: 200px;
   height: 50px;
   background-color: var(--secondary);
   border: none;
   border-radius: 6px;
-  margin-top: 60px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
+  text-decoration: none;
 }
 button span {
   color: var(--white2);
@@ -272,10 +274,13 @@ button:hover > img {
     padding-right: 50px;
   }
 
+  .button {
+    margin-top: 45px;
+  }
+  
   button {
     width: 150px;
     height: 40px;
-    margin-top: 45px;
   }
 
   button span{
