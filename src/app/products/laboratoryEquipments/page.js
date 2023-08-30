@@ -1,10 +1,9 @@
 
 import React from 'react'
-import test from '../../../../public/assets/test.jpeg'
 import Image from 'next/image'
 import { getLabEquip } from '../../contentful'
 
-export default async function page() {
+export default async function Page() {
   let res  = await getLabEquip()
 
   return (

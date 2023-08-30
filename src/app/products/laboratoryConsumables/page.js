@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import {getLabCon} from '../../contentful'
 
-export default async function page() {
+export default async function Page() {
   let res  = await getLabCon()
   return (
     <div className='productCardsContainer'>
