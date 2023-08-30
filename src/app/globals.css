@@ -328,18 +328,17 @@ button:hover > img {
   .mobileNavInvisible{
     display: flex;
     animation: fadeOut 0.2s ease-out forwards;
+    display: none
   }
 
   @keyframes fadeOut {
     0%{
       opacity: 1;
       transform: translateY(0px);
-      /* display: flex; */
     }
     90%{
       opacity: 0;
       transform: translateY(-30px);
-      /* display: none; */
     }
     100% {
       display: none;
