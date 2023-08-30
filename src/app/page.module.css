@@ -1,0 +1,810 @@
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--pageTopPadding);
+  height: 100vh;
+  background: linear-gradient(var(--primary) 20%, var(--primaryLight));
+  padding-left: var(--pageHorizontalPadding);
+  padding-right: var(--pageHorizontalPadding);
+  overflow: hidden;
+  position: relative;
+}
+
+.leftSection{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.leftSection > h2 {
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 450px;
+}
+
+.leftSection > span {
+  color: rgba(225, 225, 225, 90%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  margin-top: 20px;
+  width: 500px;
+}
+.rightSection {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+.rightSection  img {
+  width: 480px;
+  height: fit-content;
+  position: relative;
+  bottom: 80px;
+}
+
+
+.section1 >img {
+  width: 1000px;
+  height: fit-content;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-50px, 120px);
+  animation: floating 25s ease infinite;
+}
+
+@keyframes floating {
+  0%{
+    transform: translate(-50px, 120px);
+  }
+  25%{
+    transform: translate(-30px, 100px);
+  }
+  50% {
+    transform: translate(-10px, 140px);
+  }
+  75%{
+    transform: translate(-30px, 100px);
+  }
+  100%{
+    transform: translate((-50px, 120px));
+  }
+  
+}
+
+
+.section2 {
+  display: flex;
+  height: 120vh;
+  background: var(--white);
+  padding-left: var(--pageHorizontalPadding2);
+  padding-right: var(--pageHorizontalPadding2);
+}
+
+.section2Inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white2);
+  position: relative;
+  z-index: 2;
+  transform: translateY(-60px);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section2Inner > img {
+  position: absolute;
+  z-index: 0;
+  transform: translate(-200px, 300px);
+  width: 2000px;
+  height: fit-content;
+}
+
+.sectionContentHeader {
+  color: var(--secondary);
+  font-size:3 4px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.38px;
+  margin-top: var(--pageHorizontalPadding2);
+  text-align: center;
+}
+
+.section2InfoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 50px 25px;
+  position: relative;
+  z-index: 1;
+}
+.section2InfoCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2InfoCards > div {
+  margin: 25px;
+  flex: 1;
+  height: 220px;
+  min-width: 200px;
+  background-color: var(--white);
+  border-radius: var(--borderRadius);
+  position: relative;
+  border: 3px solid var(--white2);
+  padding: 20px;
+  transition: border 0.4s ease;
+}
+
+.section2InfoCards > div:hover{
+  border: 3px solid var(--secondary);
+  transition: border 0.4s ease;
+}
+.section2InfoCardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.section2InfoCardHeader > span {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.96px;
+  margin-left: 10px;
+}
+
+.section2Icons {
+  background-color: var(--primary2);
+  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2Icons > img {
+  width: 20px;
+  height: 20px;
+}
+
+.section2InfoCards  p {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.05px;
+}
+
+.section3 {
+  height: fit-content;
+  width: 100%;
+  background-color: var(--primary2);
+  overflow: hidden;
+  position: relative;
+}
+
+.section3Inner, .section4Inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.section3 > img {
+  position: absolute;
+  z-index: 0;
+  width: 2200px;
+  height: fit-content;
+  transform: translate(-150px, -1200px);
+}
+
+.section3Texts, .section4Texts {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--pageHorizontalPadding2);
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.section3ContentHeader {
+  color: var(--secondary);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2.38px;
+}
+.section3Texts > h2 {
+  color: var(--white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  padding: 10px;
+  background-color: rgba(225, 225, 255, 10%);
+  margin-top: 20px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.section3Texts > span {
+  color: rgba(225, 225, 225, 90%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  width: 80%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section3Products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--pageHorizontalPadding2);
+  padding-right: var(--pageHorizontalPadding2);
+  flex-wrap: wrap;
+  margin: 10px 0 40px 0px
+}
+
+.section3ProductCard {
+  width: 200px;
+  height: 250px;
+  background-color: var(--white);
+  margin: 20px;
+  border-radius: var(--borderRadius);
+  padding: 8px;
+  transform: scale(1);
+  transition: transform 0.4s ease-out ;
+}
+
+.section3ProductCard:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-out;
+  position: relative ;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 4px rgba(225, 88, 1, 0.45);
+}
+
+.section3ProductCard > div {
+  width: 100%;
+  height:150px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.section3ProductCard img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.section3ProductCard h2 {
+  color: var(--secondary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.075px;
+  margin-top: 5px;
+}
+
+.section3ProductCard p {
+  color: #000;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.657px;
+  margin-top: 4px;
+  height: 50px;
+}
+
+.section4 {
+  height: fit-content;
+  width: 100%;
+  background-color: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+.section4 > img {
+  position: absolute;
+  top: 600px;
+  transform: scale(1.8);
+}
+
+.section4Texts > h2 {
+  color: var(--secondary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  padding: 10px;
+  background-color: rgba(9, 31, 72, 0.10);
+  margin-top: 20px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.section4Texts > span {
+  color: rgba(0, 0, 0, 70%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  width: 75%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section4InfoContainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: var(--pageHorizontalPadding2);
+  padding-right: var(--pageHorizontalPadding2);
+  margin: 10px 0 50px 0
+}
+
+.section4InfoContainer > div {
+  flex: 1;
+  margin: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section4InfoCard {
+  flex: 1;
+  width: 100%;
+  background-color: var(--white2);
+  margin: 20px 0 20px 0;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  position: relative;
+  border: 4px solid var(--white2);
+  transition: flex 0.4s ease
+}
+
+.section4InfoCard img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+.section4InfoCard div {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0%), rgba(0, 0, 0, 100%));
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.section4InfoCard div span {
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.38px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 20px 20px;
+  width: 70%
+}
+
+.section4InfoCard:hover img{
+  transform: scale(1.1);
+  transition: transform 0.4s ease-out;
+}
+
+
+.section4InfoCard:hover {
+  flex: 1.6;
+  transition: flex 0.4s ease
+}
+.section4InfoContainer > div:nth-child(1) > .section4InfoCard:nth-child(1) {
+  flex: 1.6;
+}
+
+.section4InfoContainer > div:nth-child(2) > .section4InfoCard:nth-child(2) {
+  flex: 1.6;
+}
+
+.section4InfoContainer > div:nth-child(3) > .section4InfoCard:nth-child(1) {
+  flex: 1.6;
+}
+
+@media screen and (max-width: 1300px) {
+  .section1{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  .leftSection > h2 {
+    font-size: 36px;
+  }
+
+  .leftSection > span {
+    font-size: 14px;
+    width: 450px;
+  }
+
+  .rightSection img {
+    width: 400px;
+    bottom: 50px;
+  }
+
+  .section2 {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: fit-content;
+  }
+
+  .section2Inner > img {
+    transform: translate(-200px, 310px);
+    width: 1900px;
+  }
+  .sectionContentHeader, .section3ContentHeader {
+    font-size: 32px;
+  }
+
+  .section2InfoContainer {
+    padding: 5px 17.4px 50px 17.4px
+  }
+
+  .section2InfoCards > div {
+    margin: 12.5px;
+    width: 280px;
+    height: 260px;
+    flex: none;
+  }
+
+  .section2InfoCards p { 
+    font-size: 13px;
+  }
+
+  .section3Texts > h2, .section3Texts > span, .section4Texts > h2, .section4Texts > span {
+    font-size: 16px;
+  }
+
+  .section3Texts > span, .section4Texts > span {
+    width: 85%;
+  }
+
+  .section3Products {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section3 > img {
+    transform: translate(-400px, -1400px);
+  }
+
+  .section4InfoContainer {
+    padding-left: 25px;
+    padding-right : 25px
+  }
+  .section4InfoContainer > div {
+    margin: 10px;
+    height: 500px;
+  }
+
+  .section4InfoCard {
+    margin: 10px 0 10px 0
+  }
+
+  .section4InfoCard div span {
+    font-size: 26px;
+  }
+
+  .section4 > img {
+    transform:  scale(1.2);
+    left: -100px;
+    top: 500px
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .leftSection > h2 {
+    font-size: 34px;
+    width: 450px;
+  }
+
+  .leftSection > span {
+    width: 420px;
+    font-size: 14px;
+  }
+
+  .section2, .section3Products, .section4InfoContainer {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+  .section2Inner > img {
+    width: 1500px;
+    transform: translate(-200px, 270px);
+  }
+  .sectionContentHeader {
+    font-size: 28px;
+    margin-top: 30px 
+  }
+
+  .section2InfoContainer {
+    padding: 5px 15px 50px 15px
+  }
+
+  .section2Icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .section2Icons > img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .section2InfoCards {
+    flex-wrap: wrap;
+  }
+  .section2InfoCards > div{
+    margin: 10px;
+    flex: 1;
+    height: fit-content;
+    max-height: 270px;
+    min-height: 150px;
+    padding: 15px;
+  }
+  .section2InfoCardHeader  > span {
+    font-size: 16px;
+    margin-left: 6px;
+  }
+
+  .section2InfoCards p {
+    font-size: 12px;
+  }
+  .section2InfoCards:nth-child(1) > div:nth-child(3) > div {
+    align-items: center;
+  }
+
+  .section3 > img {
+    transform: translate(-500px, -1700px);
+    width: 2000px;
+  }
+
+  .section3Texts, .section4Texts {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .section3Texts > h2, .section3Texts > span, .section4Texts > h2, .section4Texts > span {
+    font-size: 14px;
+  }
+
+  .section3Texts > span {
+    width: 90%;
+  }
+
+  .section4InfoContainer > div {
+    height: 400px;
+  }
+
+  .section4InfoCard {
+    border-width: 2px;
+  }
+  .section4InfoCard div span {
+    font-size: 22px;
+  }
+
+  .section4 > img {
+    top: 350px
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .section1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .leftSection{
+    align-items: center;
+    width: 100%;
+    flex: none;
+  }
+  .leftSection > h2, .leftSection> span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .leftSection > h2{
+    font-size: 26px;
+  }
+
+  .leftSection > span{
+    font-size: 10px;
+    font-weight: 500;
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .section1 > img {
+    width: 750px;
+    left: -200px;
+  }
+
+  .section2, .section3Products, .section4InfoContainer,  .section3, .section4Texts  {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+  .section2Inner > img {
+    width: 1000px;
+    transform: translate(-400px, 450px);
+  }
+
+  .sectionContentHeader, .section3ContentHeader  {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .section2Inner {
+    border-radius: 14px;
+    transform: translateY(-40px);
+  }
+
+  .section2InfoContainer {
+    padding: 5px 5px 50px 5px
+  }
+
+  .section2Icons {
+    width: 26px;
+    height: 26px;
+  }
+
+  .section2Icons > img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .section2InfoCards > div {
+    flex: 0.5;
+    margin: 5px;
+    min-width:auto;
+    border-radius: 12px;
+  }
+
+  .section2InfoCards:nth-child(1) > div:nth-child(3) {
+    flex: 1;
+  }
+
+  .section2InfoCardHeader > span {
+    font-size: 14px;
+  }
+
+  .section2InfoCards p {
+    font-size: 10px;
+  }
+
+
+  .section3Texts > h2, .section4Texts > h2 {
+    font-size: 14px;
+    width: fit-content;
+  }
+
+  .section3Texts > span , .section4Texts > span {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .section3Texts, .section4Texts {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+
+  .section3Products {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section3ProductCard {
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .section3ProductCard p {
+    display: none;
+  }
+
+  .section3ProductCard {
+    min-width: 100px;
+    height: 130px;
+    margin: 10px;
+    flex: 0.4 ;
+  }
+
+  .section3ProductCard:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-out;
+    position: relative ;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 4px rgba(225, 88, 1, 0.45);
+  }
+  .section3ProductCard > div {
+    height: 90px;
+    border-radius: 4px;
+  }
+
+  .section3ProductCard h2 {
+    font-size: 8px;
+  }
+
+  .section4InfoContainer > div {
+    height: 220px;
+    margin: 5px;
+  }
+
+  .section4InfoCard {
+    margin:  5px 0 5px 0;
+    border-radius: 8px;
+  }
+  .section4InfoCard div span {
+    font-size: 10px;
+    margin: 0 0 8px 8px
+  }
+
+  .section4InfoCard div {
+    height: 50px ;
+  }
+
+  .section4 > img {
+    transform: scale(0.7);
+    top: 100px;
+    left: -600px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section2InfoCards > div {
+    flex: 1;
+  }
+  .section2InfoCards p {
+    font-size: 9px;
+  }
+}
