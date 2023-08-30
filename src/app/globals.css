@@ -91,7 +91,6 @@ header {
   width: 80%;
   height: 400px;
   background-color: var(--primary2);
-  z-index: 3;
   top: 55px;
   right: 30px;
   border-radius: 6px;
@@ -330,6 +329,7 @@ button:hover > img {
     display: flex;
     animation: fadeOut 0.2s ease-out forwards;
   }
+
   @keyframes fadeOut {
     0%{
       opacity: 1;

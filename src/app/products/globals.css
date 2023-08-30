@@ -244,8 +244,8 @@
         display: none
     }
 
-    .productsNav div {
-        height: 20px;
+    .productType, .productType_active {
+        height: 24px;
     }
 
     .productsNav div  span{
