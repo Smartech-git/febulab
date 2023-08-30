@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { getLabCon } from '@/app/contentful'
+import {getLabCon} from '../../contentful'
 
 export default async function page() {
   let res  = await getLabCon()

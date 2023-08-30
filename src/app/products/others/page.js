@@ -2,7 +2,7 @@
 import React from 'react'
 import test from '../../../../public/assets/test.jpeg'
 import Image from 'next/image'
-import { getOthers } from '@/app/contentful'
+import { getOthers } from '../../contentful'
 
 export default async function page() {
   let res =  await getOthers()
