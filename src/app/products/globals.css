@@ -128,6 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .productType_active{
@@ -141,6 +142,7 @@
     justify-content: center;
     height: 30px;
     width: fit-content;
+    user-select: none;
 }
 
 .productType:hover {
@@ -240,6 +242,15 @@
         overflow-x: scroll;
     }
 
+    .productType:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        transition: background-color 0.2s ease-out;
+    }
+
+    .productType:hover > span {
+        color: var(--primary2);
+    }
+
     .productsNav::-webkit-scrollbar {
         display: none
     }
@@ -264,6 +275,7 @@
     .productCard > div {
         border-radius: 4px;
         height: 150px;
+        user-select: none;
     }
 
     .productCard > div:hover {
